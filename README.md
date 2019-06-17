@@ -38,7 +38,7 @@ Step 1. Add the JitPack repository to your build file
 Step 2. Add the dependency
         
         dependencies {
-	        implementation 'com.github.manishkummar21:bluetoothscanning:Tag'
+	        implementation 'com.github.manishkummar21:bluetoothscanning:v1.0'
 	      }
 	      
 Step 3. Enable the databinding in your project

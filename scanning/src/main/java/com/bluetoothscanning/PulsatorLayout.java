@@ -431,8 +431,9 @@ public class PulsatorLayout extends RelativeLayout {
             l.setOnClickListener(onClickListener);
 
             //ProfileImage
+            LayoutParams imglayoutParams = new LayoutParams((int) getResources().getDimension(R.dimen.fourtyeight), (int) getResources().getDimension(R.dimen.fourtyeight));
             ImageView useravator = new ImageView(getContext());
-            useravator.setLayoutParams(layoutParams);
+            useravator.setLayoutParams(imglayoutParams);
             useravator.setImageDrawable(resize(getResources().getDrawable(getRandomAvators()), regions.get(0)));
             l.addView(useravator);
 

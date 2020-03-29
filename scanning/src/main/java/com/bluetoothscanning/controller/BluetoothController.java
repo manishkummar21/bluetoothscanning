@@ -95,7 +95,7 @@ public class BluetoothController implements BluetoothInterface {
     @Override
     public void stopDiscovery() {
 
-        if (bluetoothAdapter.isDiscovering())
+        if (bluetoothAdapter != null && bluetoothAdapter.isDiscovering())
             bluetoothAdapter.cancelDiscovery();
 
     }

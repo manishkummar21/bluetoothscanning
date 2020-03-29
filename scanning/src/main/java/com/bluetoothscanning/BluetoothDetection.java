@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -44,8 +45,11 @@ public class BluetoothDetection extends AppCompatActivity implements IBluetooth 
         mainBinding.pulsator.setAvators(config.getAvatars());
 
         // let us check bluetoothSupports or not if not then finish the activity
-        if (controller.checkIfDeviceSupports())
+        if (controller.checkIfDeviceSupports()) {
+            Toast.makeText(getApplicationContext(), "Device not Support Bluetooth", Toast.LENGTH_LONG).show();
             finish();
+            return;
+        }
 
         controller.setName();
 

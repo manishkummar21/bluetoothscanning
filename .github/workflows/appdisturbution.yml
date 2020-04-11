@@ -6,7 +6,7 @@ on:
 
 jobs:
   apk:
-    name: Generate APK
+    name: Upload APK To FireBase App Disturbution
     runs-on: ubuntu-latest
 
     steps:
